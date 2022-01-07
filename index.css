@@ -1,13 +1,14 @@
 /*--CORPO--*/
 
 body {
-    background: black;
+    background: #26282b;
+    background-image: url(./imagens/textura.png);
     font-family: 'Press Start 2P', cursive;
     max-width: auto;
     max-height: auto;
     margin: auto;
     padding: auto;
-    border: black;
+    border: #26282b;
 }
 
 #container {
@@ -58,15 +59,21 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    /* background: -webkit-linear-gradient(right, #000000 0%, #393343 12%, #393343 24%, #207cca 36%, #40326b 48%, #1d0e81 60%, #614ba0 72%, #ac9cca 84%, #ffffff 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
-    color: blue;
+    color: #0051ff;
     text-align: center;
     font-size: 8px;
     max-width: auto;
     position: absolute;
+    animation: neon2 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neon2 {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228dff, 0 0 70px #228dff, 0 0 80px #228dff, 0 0 100px #228dff, 0 0 150px #228dff;
+    }
+    to {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228dff, 0 0 35px #228dff, 0 0 40px #228dff, 0 0 50px #228dff, 0 0 75px #228dff;
+    }
 }
 
 
@@ -76,9 +83,18 @@ footer {
     font-size: 3rem;
     font-weight: bold;
     line-height: 1.1;
-    color: blue;
+    color: #0051ff;
     text-align: center;
     margin-top: 20%;
+    animation: neon2 1.5s ease-in-out infinite alternate;
+}
+
+
+/* SPOTIFY */
+
+.spotify {
+    margin-top: 10%;
+    margin-left: 35%;
 }
 
 
@@ -90,7 +106,8 @@ footer {
     right: -100%;
     height: 100%;
     width: 100%;
-    background: black;
+    background: #26282b;
+    background-image: url(./imagens/textura.png);
     transition: all 0.6s ease-in-out;
 }
 
@@ -121,7 +138,7 @@ footer {
     top: calc(50% - 1px);
     left: 30%;
     width: 40%;
-    border-bottom: 2px solid blue;
+    border-bottom: 2px solid #0051ff;
     transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
@@ -147,12 +164,12 @@ footer {
 
 #active:checked+.menu-btn:before {
     transform: rotate(45deg);
-    border-color: #fff;
+    border-color: #0051ff;
 }
 
 #active:checked+.menu-btn:after {
     transform: rotate(-45deg);
-    border-color: #fff;
+    border-color: #0051ff;
 }
 
 .wrapper ul {
@@ -175,7 +192,7 @@ footer {
     font-size: 30px;
     font-weight: 500;
     padding: 5px 30px;
-    color: blue;
+    color: #0051ff;
     border-radius: 50px;
     position: absolute;
     line-height: 50px;
@@ -183,6 +200,7 @@ footer {
     opacity: 0;
     transition: all 0.3s ease;
     transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation: neon2 1.5s ease-in-out infinite alternate;
 }
 
 .wrapper ul li a:after {
@@ -203,7 +221,7 @@ footer {
 }
 
 .wrapper ul li a:hover {
-    color: #1a73e8;
+    color: #0051ff;
 }
 
 input[type="checkbox"] {
