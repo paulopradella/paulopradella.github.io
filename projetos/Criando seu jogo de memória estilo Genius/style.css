@@ -1,46 +1,8 @@
-/*--CORPO--*/
-
 body {
-    background: #26282b;
-    background-image: url(./imagens/textura.png);
+    margin: 0;
+    background-color: #26282b;
+    background-image: url("/imagens/textura.png");
     font-family: 'Press Start 2P', cursive;
-    max-width: auto;
-    max-height: auto;
-    margin: auto;
-    padding: auto;
-    border: #26282b;
-}
-
-#container {
-    margin: 1em auto;
-    width: auto;
-}
-
-section {
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-main {
-    flex-grow: 1;
-}
-
-header {
-    color: black;
-    padding: 20px;
-}
-
-footer {
-    color: black;
-    padding: 20px;
-}
-
-header,
-main,
-footer {
-    flex-shrink: 0;
 }
 
 #mainnav {
@@ -49,22 +11,33 @@ footer {
     justify-content: center;
 }
 
+#title {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.1;
+    color: #0051ff;
+    text-align: center;
+    animation: neon2 1.5s ease-in-out infinite alternate;
+}
 
-/*--RODAPE--*/
+.link {
+    text-decoration: none
+}
 
-.rodape {
-    padding: 0%;
+.rodapehome {
+    position: flex;
     border: none;
     z-index: -1;
-    left: 0;
     bottom: 0;
+    left: 0;
+    height: 40px;
     width: 100%;
     color: #0051ff;
     text-align: center;
     font-size: 8px;
     max-width: auto;
-    position: absolute;
     animation: neon2 1.5s ease-in-out infinite alternate;
+    margin-top: 5%;
 }
 
 @keyframes neon2 {
@@ -76,29 +49,60 @@ footer {
     }
 }
 
-
-/*--TITULO--*/
-
-#title {
-    font-size: 3rem;
-    font-weight: bold;
-    line-height: 1.1;
-    color: #0051ff;
-    text-align: center;
-    margin-top: 20%;
-    animation: neon2 1.5s ease-in-out infinite alternate;
+.main-game {
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.link {
-    text-decoration: none
+.genius {
+    display: grid;
+    grid-template-areas: 'roxo vermelho' 'verde azul';
+    grid-gap: 15px;
+    border: 15px solid rgb(43, 42, 42);
+    background-color: rgb(43, 42, 42);
+    border-radius: 100%;
+    width: 400px;
+    height: 400px;
 }
 
+.blue {
+    grid-area: azul;
+    background-color: blue;
+    border-bottom-right-radius: 100%;
+    background-image: url("../imagens/gun-metal-textura.png");
+}
 
-/* SPOTIFY */
+.red {
+    grid-area: vermelho;
+    background-color: rgb(241, 40, 0);
+    border-top-right-radius: 100%;
+    background-image: url("../imagens/gun-metal-textura.png");
+}
+
+.green {
+    grid-area: verde;
+    background-color: rgb(73, 182, 117);
+    border-bottom-left-radius: 100%;
+    background-image: url("../imagens/gun-metal-textura.png");
+}
+
+.purple {
+    grid-area: roxo;
+    background-color: purple;
+    border-top-left-radius: 100%;
+    background-image: url("../imagens/gun-metal-textura.png");
+}
+
+.selected {
+    opacity: 0.4;
+}
 
 .spotify {
-    margin-top: 10%;
     margin-left: 35%;
+    margin-top: -40%;
 }
 
 
@@ -111,7 +115,7 @@ footer {
     height: 100%;
     width: 100%;
     background: #26282b;
-    background-image: url(./imagens/textura.png);
+    background-image: url("/imagens/textura.png");
     transition: all 0.6s ease-in-out;
 }
 
