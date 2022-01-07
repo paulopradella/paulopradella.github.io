@@ -26,7 +26,7 @@ let shuffleOrder = () => {
 
 //acende a proxima cor
 let lightColor = (element, number) => {
-    number = number * 1000;
+    number = number * 500;
     setTimeout(() => {
         element.classList.add('selected');
     }, number - 250);
