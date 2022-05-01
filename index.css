@@ -64,17 +64,18 @@ footer {
     font-size: 8px;
     max-width: auto;
     position: absolute;
-    animation: neon2 1.5s ease-in-out infinite alternate;
+    /* animation: neon2 1.5s ease-in-out infinite alternate; */
 }
 
-@keyframes neon2 {
+
+/* @keyframes neon2 {
     from {
         text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228dff, 0 0 70px #228dff, 0 0 80px #228dff, 0 0 100px #228dff, 0 0 150px #228dff;
     }
     to {
         text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228dff, 0 0 35px #228dff, 0 0 40px #228dff, 0 0 50px #228dff, 0 0 75px #228dff;
     }
-}
+} */
 
 
 /*--TITULO--*/
@@ -86,7 +87,7 @@ footer {
     color: #0051ff;
     text-align: center;
     margin-top: 20%;
-    animation: neon2 1.5s ease-in-out infinite alternate;
+    /* animation: neon2 1.5s ease-in-out infinite alternate; */
 }
 
 .link {
@@ -204,7 +205,7 @@ footer {
     opacity: 0;
     transition: all 0.3s ease;
     transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
-    animation: neon2 1.5s ease-in-out infinite alternate;
+    /* animation: neon2 1.5s ease-in-out infinite alternate; */
 }
 
 .wrapper ul li a:after {
