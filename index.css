@@ -45,6 +45,7 @@ body {
     color: #DDDEE7;
     text-align: center;
     font-family: Neo;
+    margin-top: 1rem;
 }
 
 #title, #subtitle{
@@ -65,5 +66,5 @@ body {
   }
 
 .spotify{
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
