@@ -1,0 +1,12 @@
+ {
+    "menu:" :{
+    "pt": {
+        "about": "SOBRE",
+        "skill": "SKILL",
+        "resume": "CURRICULO",
+        "projects": "PROJETOS",
+        "contact": "CONTATO"
+    }
+    }
+}
+ 

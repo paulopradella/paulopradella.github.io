@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    background-color: #26282b;
+    background-image: url("../imagens/gun-metal-textura.png");
+    font-family: 'Press Start 2P', cursive;
+}
+
+#mainnav {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+#title {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.1;
+    color: #0051ff;
+    text-align: center;
+    animation: neon2 1.5s ease-in-out infinite alternate;
+}
+
+.rodapehome {
+    position: flex;
+    border: none;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+    height: 40px;
+    width: 100%;
+    color: #0051ff;
+    text-align: center;
+    font-size: 8px;
+    max-width: auto;
+    animation: neon2 1.5s ease-in-out infinite alternate;
+    margin-top: 5%;
+}
+
+@keyframes neon2 {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228dff, 0 0 70px #228dff, 0 0 80px #228dff, 0 0 100px #228dff, 0 0 150px #228dff;
+    }
+    to {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228dff, 0 0 35px #228dff, 0 0 40px #228dff, 0 0 50px #228dff, 0 0 75px #228dff;
+    }
+}
+
+.main-game {
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.genius {
+    display: grid;
+    grid-template-areas: 'roxo vermelho' 'verde azul';
+    grid-gap: 15px;
+    border: 15px solid rgb(43, 42, 42);
+    background-color: rgb(43, 42, 42);
+    border-radius: 100%;
+    width: 400px;
+    height: 400px;
+}
+
+.blue {
+    grid-area: azul;
+    background-color: blue;
+    border-bottom-right-radius: 100%;
+    background-image: url("../imagens/gun-metal-textura.png");
+}
+
+.red {
+    grid-area: vermelho;
+    background-color: rgb(241, 40, 0);
+    border-top-right-radius: 100%;
+    background-image: url("../imagens/gun-metal-textura.png");
+}
+
+.green {
+    grid-area: verde;
+    background-color: rgb(73, 182, 117);
+    border-bottom-left-radius: 100%;
+    background-image: url("../imagens/gun-metal-textura.png");
+}
+
+.purple {
+    grid-area: roxo;
+    background-color: purple;
+    border-top-left-radius: 100%;
+    background-image: url("../imagens/gun-metal-textura.png");
+}
+
+.selected {
+    opacity: 0.4;
+}
+
+.spotify {
+    margin-left: 35%;
+    margin-top: -40%;
+}
