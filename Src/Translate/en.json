@@ -1,0 +1,11 @@
+{
+    "menu":{
+    "en": {
+        "about": "ABOUT",
+        "skill": "SKILL",
+        "resume": "RESUME",
+        "projects": "PROJECTS",
+        "contact": "CONTACT"
+    }
+}
+ }

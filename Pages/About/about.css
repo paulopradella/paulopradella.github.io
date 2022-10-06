@@ -1,0 +1,40 @@
+
+            /*--CORPO--*/
+            
+            body {
+                background: #242424;
+                font-family: Helvetica;
+                max-width: auto;
+                max-height: auto;
+                margin: auto;
+                padding: auto;
+            }
+            header{
+                padding-bottom: 10%;
+            }
+            main{
+                margin-top: -60rem;
+                z-index: 10;
+            }
+            object{
+                height: 100vh;
+            }
+            /* TEXTS */
+            
+            .theme {
+                margin-top: 5rem;               
+                padding-left: 10%;
+                font-family: Helvetica;
+                font-size: 2rem;
+                color: #DDDEE7;
+
+            }
+            .themeText{
+                margin-top: 2rem;
+                padding-left: 10%;
+                padding-right: 20%;
+                margin-left: 3rem;
+                font-family: Helvetica;
+                color: #DDDEE7;
+                font-size: 1.5rem;
+            }
